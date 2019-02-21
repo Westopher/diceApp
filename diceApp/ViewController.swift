@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         randomDiceIndex1 = Int.random(in: 0 ... 5)
         randomDiceIndex2 = Int.random(in: 0 ... 5)
         print(randomDiceIndex1)
+        
+        diceImageView1.image = UIImage(named: "dice\(randomDiceIndex1)")
+        diceImageView2.image = UIImage(named: "dice\(randomDiceIndex1)")
     }
     
     override func viewDidLoad() {
